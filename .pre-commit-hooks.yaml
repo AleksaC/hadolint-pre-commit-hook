@@ -1,0 +1,6 @@
+- id: hadolint
+  name: Hadolint
+  description: Lint Dockerfiles using hadolint
+  entry: lint.sh
+  language: script
+  files: ^.*/(.+\.)?Dockerfile$
