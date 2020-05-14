@@ -16,7 +16,11 @@ esac
 
 if [ ! -f $HADOLINT ]; then
     echo -e "\nDownloading hadolint...\n"
-    wget -O $HADOLINT $URL &> /dev/null
+    if command -v curl >/dev/null 2>&1 ; then
+        curl -L $URL -o $HADOLINT -s
+    elif command -v wget >/dev/null 2>&1; then
+        wget -O $HADOLINT $URL &> /dev/null
+    fi
 fi
 
 if [ ! -x ./hadolint ]; then
