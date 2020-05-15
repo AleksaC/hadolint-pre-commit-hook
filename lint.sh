@@ -20,6 +20,9 @@ if [ ! -f $HADOLINT ]; then
         curl -L $URL -o $HADOLINT -s
     elif command -v wget >/dev/null 2>&1; then
         wget -O $HADOLINT $URL &> /dev/null
+    else
+        echo "Please install wget or curl, or manually download ${URL} to ${DIR}."
+        exit 1
     fi
 fi
 
