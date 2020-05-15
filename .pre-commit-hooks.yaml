@@ -3,4 +3,4 @@
   description: Lint Dockerfiles using hadolint
   entry: lint.sh
   language: script
-  files: ^.*/(.+\.)?Dockerfile$
+  files: ^([\w\/_ ]+[\.\/])?Dockerfile$

@@ -12,6 +12,9 @@ case $OSTYPE in
     "darwin")
         URL="${BASE_URL}/hadolint-Darwin-x86_64"
         ;;
+    "msys")
+        URL="${BASE_URL}/hadolint-Windows-x86_64.exe"
+        ;;
 esac
 
 if [ ! -f $HADOLINT ]; then
