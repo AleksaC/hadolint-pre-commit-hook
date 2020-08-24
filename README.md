@@ -11,7 +11,7 @@ or after cleaning the pre-commit cache.
 Example `.pre-commit-config.yaml` with rules `DL3025` and `DL3018` excluded.
 ```yaml
 repos:
-  - repo: /home/aleksa/Desktop/hadolint-pre-commit
+  - repo: https://github.com/AleksaC/hadolint-pre-commit-hook
     rev: master
     hooks:
       - id: hadolint
