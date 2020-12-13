@@ -1,4 +1,11 @@
 # hadolint-pre-commit
+
+## Deprecated!
+For a better way to use hadolint as pre-commit hook check
+[this out](https://github.com/AleksaC/hadolint-pre-commit-hook)
+
+---
+
 [pre-commit](https://pre-commit.com/) hook for linting dockerfiles using [hadolint](https://github.com/hadolint/hadolint/)
 
 Currently uses hadolint v1.17.6. To use another version look for it in the past
